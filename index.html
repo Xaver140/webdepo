@@ -1,0 +1,147 @@
+<!--Mohacsek Áron 2023-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arcade Astoria</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	
+	<!--Navigációs terület-->
+	<nav class="navbar navbar-default" style="background-color: rgb(46, 32, 48); border: none;">
+		<div class="container-fluid">
+			<div class="navbar-header"><a class="navbar-brand" href="#" style="color: #C7C7C7;">ARCADE ASTORIA</a></div>
+			<ul class="nav navbar-nav">
+				<li><a href="#" style="color:#C7C7C7;background-color:black;">Home</a></li>
+				<li><a href="games.html" style="color:#C7C7C7;">Games</a></li>
+				<li><a href="prices.html" style="color:#C7C7C7;">Prices</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right"><li><button class="signup_btn" onclick="" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Sign Up</button></li></ul>
+
+			
+			<div class="modal fade" id="myModal" role="dialog">
+			  <div class="modal-dialog">
+			<div id="signup" >
+				<img src="res/user.png" style="width:50px;margin-bottom:25px;margin-left:40%;margin-right:40%;">
+				<input class="input_signup" type="email" id="email" name="email" placeholder="Email" required>
+				<input class="input_signup" type="password" id="password" name="password" placeholder="Password" required>
+				<button class="signup_btn" onclick="">Sign Up</button>
+			</div>
+			</div>
+			</div>
+
+		</div>
+	</nav>
+	
+	<!--Logó megjelenítés-->
+	<div class="logo">
+		<img class="logo_img" src="res/logo.png">
+	</div>
+
+
+	<div class="bouncing-element">HAVE FUN!</div>
+	
+	<!--Egy kis marketing szerű köszöntő szöveg-->
+	<div class="main">
+		<p>Best Games</p>
+		<p>Best Prices</p>
+		<p>Best Experience</p>
+		<div class="knowmore">
+			<p><a href="#" data-toggle="popover" title="Know More" data-content="You can buy tickets on the second tab">Know more</a></p>
+		</div>
+	</div>
+	
+	<!--Kép megjelenítő (Bootstrap ebben sokat segít)-->
+	<div class="main">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width:50%;scale:1 0.8;">
+		  <ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+		  </ol>
+		  <div class="carousel-inner">
+			<div class="item active">
+				<img src="res/slide1.jpg">
+				<div class="carousel-caption"><p style="font-size:25px;">Retro style experience!</p></div>
+			</div>
+
+			<div class="item">
+				<img src="res/slide2.jpg">
+				<div class="carousel-caption"><p style="font-size:25px;">Best group program!</p></div>
+			</div>
+
+			<div class="item">
+				<img src="res/slide3.jpg">
+				<div class="carousel-caption"><p style="font-size:25px;">Realistic simulators!</p></div>
+			</div>
+			
+			<div class="item">
+				<img src="res/slide4.jpg">
+				<div class="carousel-caption"><p style="font-size:25px;">Also modern gameplay!</p></div>
+			</div>
+		  </div>
+		  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		  </a>
+		</div>
+	</div>
+	
+	<div id="signup" class="signup">
+
+	</div>
+
+	
+	<!--Bemutató szöveg-->
+	<div class="main">
+		<button class="letsgo" onclick="window.location.href='prices.html';">LET'S GO</button>
+		<p style="text-align:center;"> 
+		<br>Welcome to the ultimate gaming destination!<br>
+		Get ready to embark on an electrifying journey<br>
+		into the world of pixels and high scores<br>
+		at our Arcade Gameplace.<br><br><br>
+		
+		Immerse yourself in a gaming haven where nostalgia<br>
+		meets cutting-edge technology, creating an<br>
+		experience that's as thrilling as<br>
+		it is timeless.<br><br><br>
+		
+		Play. Compete. Repeat.<br><br><br>
+		
+		Arcade Astoria isn't just about the games, it's about<br>
+		the community. Join fellow gamers in friendly<br>
+		competition, swap strategies, and forge<br>
+		new alliances.<br><br><br>
+		
+		
+
+		Ready to level up your gaming experience?<br>
+		Plan your visit to Arcade Gameplace today.<br><br>
+		Gear up for an epic adventure – the high score awaits!<br><br>
+		</p>
+		<button class="letsgo" onclick="window.location.href='prices.html';">LET'S GO</button>
+		<br><br><br><br><br><br><br>
+	</div>
+
+
+
+		
+
+	
+</body>
+<script src="script.js"></script>
+<script>
+	$(document).ready(function(){
+	  $('[data-toggle="popover"]').popover();   
+	});
+	</script>
+</html>
